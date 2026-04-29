@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>Trueform — an AI design partner bound by the rules of mechanics</title>
-<meta name="description" content="Trueform is an open-source AI design partner for mechanical engineering. Describe a part, sketch it, or photograph a broken one — the agent builds the CAD with you and emits a manufacturer-ready package. Every number is computed by a validated solver." />
+<meta name="description" content="Trueform turns a photo, a sketch, or a description into a 3D-print-ready file or a full manufacturing drawing pack. Useful at home — snap a broken clip, print a stronger one. Useful at work — describe a steel bracket and get a sized, GD&T-annotated drawing ready for the shop. Every number computed by a validated solver." />
 <meta property="og:title" content="Trueform" />
 <meta property="og:description" content="An AI design partner bound by the rules of mechanics." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -36,7 +36,7 @@
   <div class="wrap">
     <p class="badge">Currently in development · Open-source · MIT licence</p>
     <h1 class="display">Trueform.</h1>
-    <p class="lede">An AI design partner bound by the rules of mechanics: describe a part, sketch it, or photograph a broken one — the agent builds the CAD with you and emits a manufacturer-ready package; every number is computed by a validated solver, never invented.</p>
+    <p class="lede">Trueform turns a photo, a sketch, or a few sentences into a 3D-print-ready file or a full manufacturing drawing pack. <b>Useful at home</b> — snap a broken plastic clip, get an STL ready for any printer. <b>Useful at work</b> — describe a 6&nbsp;mm aluminium bracket holding 30&nbsp;kg, get back a sized, GD&amp;T-annotated drawing pack for the machine shop. Every number is computed by a validated solver, never invented by the language model.</p>
     <div class="cta-row">
       <a class="btn primary" href="https://github.com/allamaprabhuani/trueform">Code on GitHub</a>
       <a class="btn ghost" href="mailto:allamaprabhuani@gmail.com?subject=Trueform%20-%20notify%20me">Get notified</a>
@@ -48,79 +48,102 @@
 <section id="what" class="block">
   <div class="wrap">
     <p class="eyebrow">What Trueform does</p>
-    <h2 class="h2">Four ways to start a design.</h2>
-    <p class="sub">Trueform meets you wherever the idea begins — a file, a sentence, a sketch, or a photograph of something that snapped.</p>
+    <h2 class="h2">Four ways in. One useful file out.</h2>
+    <p class="sub">Tell Trueform what you need in whatever form is easiest. Get back something you can actually print, machine, or hand to a manufacturer.</p>
 
     <div class="grid grid-4">
       <article class="card">
         <div class="ico" aria-hidden="true">
-          <svg viewBox="0 0 40 40"><rect x="6" y="6" width="28" height="28" rx="2" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M14 20 L20 14 L26 20 L20 26 Z" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
+          <svg viewBox="0 0 40 40"><rect x="5" y="11" width="30" height="20" rx="2" fill="none" stroke="currentColor" stroke-width="1.4"/><circle cx="20" cy="21" r="6" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M14 11 L17 7 H23 L26 11" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
         </div>
-        <h3>1. Upload a CAD file</h3>
-        <p>Drop in STEP or STL. Trueform parses the geometry and extracts the design features it needs to reason about.</p>
+        <h3>1. A photo of a broken part</h3>
+        <p>One picture of the snapped piece is enough. Trueform reconstructs the geometry, proposes a stronger version, and exports a 3D-print-ready file (STL or 3MF) you can send to any printer.</p>
       </article>
       <article class="card">
         <div class="ico" aria-hidden="true">
           <svg viewBox="0 0 40 40"><path d="M8 12h24M8 20h24M8 28h16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
         </div>
-        <h3>2. Describe it in words</h3>
-        <p>Tell the agent what the part has to do. It builds the CAD with you, iteratively refining geometry, fits, and constraints.</p>
+        <h3>2. A description with materials</h3>
+        <p>"A 6&nbsp;mm 6061-aluminium L-bracket, 80&nbsp;mm tall, two M5 holes 50&nbsp;mm apart, must hold 30&nbsp;kg." Trueform sizes it, picks the wall thicknesses, and outputs the CAD plus a fully-dimensioned drawing.</p>
       </article>
       <article class="card">
         <div class="ico" aria-hidden="true">
           <svg viewBox="0 0 40 40"><path d="M7 30 C 12 18, 22 14, 32 10 L 30 14 M 32 10 L 28 8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </div>
-        <h3>3. Sketch it</h3>
-        <p>Draw on paper or a tablet, snap it. Trueform interprets the lines and converts them into parametric CAD.</p>
+        <h3>3. A sketch on paper</h3>
+        <p>Draw the rough shape, photograph it. Trueform interprets the lines and turns them into a parametric CAD model you can refine in conversation, then export.</p>
       </article>
       <article class="card">
         <div class="ico" aria-hidden="true">
-          <svg viewBox="0 0 40 40"><rect x="5" y="11" width="30" height="20" rx="2" fill="none" stroke="currentColor" stroke-width="1.4"/><circle cx="20" cy="21" r="6" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M14 11 L17 7 H23 L26 11" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
+          <svg viewBox="0 0 40 40"><rect x="6" y="6" width="28" height="28" rx="2" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M14 20 L20 14 L26 20 L20 26 Z" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
         </div>
-        <h3>4. Photograph the broken part</h3>
-        <p>One image of a snapped component is enough. Trueform reconstructs the geometry and proposes a stronger replacement.</p>
+        <h3>4. An existing CAD file</h3>
+        <p>STEP or STL in. Trueform audits the design, finds lighter / cheaper / more printable variants on a Pareto front, and emits the analysis paperwork to back the change.</p>
       </article>
     </div>
 
     <figure class="quote">
       <blockquote>
-        Imagine a child snaps a photo of a broken plastic clip on a chair. Within minutes, a 3D printer produces a stronger, lighter replacement that the chair will outlive. Trueform scales from that clip up to a wind-turbine bracket or a satellite hinge — same principles, same constraint architecture.
+        Imagine a child snaps a photo of a broken plastic clip on a chair. Within minutes, a 3D printer produces a stronger, lighter replacement that the chair will outlive. Trueform scales from that clip up to a steel bracket holding industrial loads, or a wind-turbine mount — same workflow, same honesty about the numbers.
       </blockquote>
     </figure>
   </div>
 </section>
 
+<section id="who" class="block">
+  <div class="wrap">
+    <p class="eyebrow">Who it's for</p>
+    <h2 class="h2">From kitchen to factory floor.</h2>
+    <p class="sub">Same agent, same physics, same standards. The output adjusts to who is asking.</p>
+
+    <div class="grid grid-3">
+      <article class="card">
+        <h3>At home</h3>
+        <p>Broken IKEA bracket. Lost knob on a 12-year-old appliance. A clip that snapped on the school chair. Photograph it; print the replacement; move on.</p>
+      </article>
+      <article class="card">
+        <h3>For makers &amp; small teams</h3>
+        <p>An MVP enclosure designed and printable in an afternoon. A custom mount sized for the load it actually carries, with a sketch-to-shop drawing you can email a contract manufacturer.</p>
+      </article>
+      <article class="card">
+        <h3>For engineering teams</h3>
+        <p>Material-by-material design audits of existing parts. Full GD&amp;T drawing packs traceable to ASME&nbsp;Y14.5. Inverse design across mass, cost, and life — with citations every reviewer can check.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
 <section id="moat" class="block alt">
   <div class="wrap">
-    <p class="eyebrow">The moat</p>
+    <p class="eyebrow">How it stays honest</p>
     <h2 class="h2">Bound by the rules of mechanics.</h2>
-    <p class="sub">The language model is a router, not an oracle. It is forbidden from generating numerical answers.</p>
+    <p class="sub">The language model is a router, not an oracle. It does not make up numbers.</p>
 
     <ul class="rules">
       <li>
         <span class="dot" aria-hidden="true"></span>
-        <p>The LLM only routes work to validated physics solvers. It never invents a number.</p>
+        <p>Every dimension, tolerance, and material call is computed by a validated solver — the same kind of code a senior engineer would have written by hand.</p>
       </li>
       <li>
         <span class="dot" aria-hidden="true"></span>
-        <p>Every output is computed by a deterministic solver and cites the source equation, page, and standard — Bruhn, Niu, ESDU, Lekhnitskii, ASME&nbsp;Y14.5.</p>
+        <p>Every recommendation cites the textbook page or the standard it came from — Bruhn, Niu, ESDU, Lekhnitskii, ASME&nbsp;Y14.5. You can check the working.</p>
       </li>
       <li>
         <span class="dot" aria-hidden="true"></span>
-        <p>Every recommendation passes a physics-and-manufacturability constraint check — yield, buckling, fatigue, printability, tolerance feasibility — before emission.</p>
+        <p>Before a file leaves the agent, it passes a sanity check — strength, fatigue, printability, tolerance feasibility. Anything that fails is flagged, not hidden.</p>
       </li>
       <li>
         <span class="dot" aria-hidden="true"></span>
-        <p>If no validated solver can answer a question, the agent says so and stops.</p>
+        <p>If Trueform does not have a validated way to answer your question, it says so. It does not guess.</p>
       </li>
     </ul>
 
     <div class="emit">
-      <p class="eyebrow small">What it emits</p>
+      <p class="eyebrow small">What you get back</p>
       <div class="grid grid-3">
-        <div class="emit-card"><h4>Drawing pack</h4><p>An ASME Y14.5-compliant, GD&amp;T-annotated drawing set, ready for the shop.</p></div>
-        <div class="emit-card"><h4>Analysis report</h4><p>A written report citing the relevant Bruhn, Niu, ESDU, and standard passages line by line.</p></div>
-        <div class="emit-card"><h4>Manufacturing code</h4><p>NC / G-code for machining, sliced output for 3D printing — the part, ready to make.</p></div>
+        <div class="emit-card"><h4>At home</h4><p>An STL or 3MF file ready for any 3D printer, plus a short note on how strong the part will be and what it can take.</p></div>
+        <div class="emit-card"><h4>For your machinist</h4><p>An ASME&nbsp;Y14.5-compliant, GD&amp;T-annotated drawing pack — the document a contract manufacturer asks for.</p></div>
+        <div class="emit-card"><h4>For your engineer</h4><p>An analysis report citing every relevant Bruhn / Niu / ESDU equation. Plus the CNC G-code or printer slicer file, ready to send.</p></div>
       </div>
     </div>
   </div>
