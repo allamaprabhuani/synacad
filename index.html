@@ -33,13 +33,41 @@
 
 <main>
 <section class="hero">
-  <div class="wrap">
-    <p class="badge">Currently in development · Open-source · MIT licence</p>
-    <h1 class="display">Trueform.</h1>
-    <p class="lede">Trueform turns a photo, a sketch, or a few sentences into a 3D-print-ready file or a full manufacturing drawing pack. <b>Useful at home</b> — snap a broken plastic clip, get an STL ready for any printer. <b>Useful at work</b> — describe a 6&nbsp;mm aluminium bracket holding 30&nbsp;kg, get back a sized, GD&amp;T-annotated drawing pack for the machine shop. Every number is computed by a validated solver, never invented by the language model.</p>
-    <div class="cta-row">
-      <a class="btn primary" href="https://github.com/allamaprabhuani/trueform">Code on GitHub</a>
-      <a class="btn ghost" href="mailto:allamaprabhuani@gmail.com?subject=Trueform%20-%20notify%20me">Get notified</a>
+  <div class="wrap hero-wrap">
+    <div class="hero-copy">
+      <p class="badge">Currently in development · Open-source · MIT licence</p>
+      <h1 class="display">Trueform.</h1>
+      <p class="lede">Trueform turns a photo, a sketch, or a few sentences into a 3D-print-ready file or a full manufacturing drawing pack. <b>Useful at home</b> — snap a broken plastic clip, get an STL ready for any printer. <b>Useful at work</b> — describe a 6&nbsp;mm aluminium bracket holding 30&nbsp;kg, get back a sized, GD&amp;T-annotated drawing pack for the machine shop. Every number is computed by a validated solver, never invented by the language model.</p>
+      <div class="cta-row">
+        <a class="btn primary" href="https://github.com/allamaprabhuani/trueform">Code on GitHub</a>
+        <a class="btn ghost" href="mailto:allamaprabhuani@gmail.com?subject=Trueform%20-%20notify%20me">Get notified</a>
+      </div>
+    </div>
+    <div class="hero-anim" aria-hidden="true">
+      <svg viewBox="0 0 360 320" xmlns="http://www.w3.org/2000/svg">
+        <!-- Bracket outline (drawn first) -->
+        <g class="part" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path class="d1" d="M 70 230 L 70 90 L 220 90 L 220 130 L 110 130 L 110 230 Z"/>
+        </g>
+        <!-- Two holes -->
+        <g class="holes" stroke="currentColor" stroke-width="1.4" fill="none">
+          <circle class="d2" cx="145" cy="110" r="8"/>
+          <circle class="d3" cx="195" cy="110" r="8"/>
+          <circle class="d4" cx="90" cy="200" r="6"/>
+        </g>
+        <!-- Dimension lines -->
+        <g class="dims" stroke="currentColor" stroke-width="0.8" fill="none" opacity="0.55">
+          <path class="d5" d="M 70 250 L 220 250 M 70 245 L 70 255 M 220 245 L 220 255"/>
+          <path class="d6" d="M 250 90 L 250 130 M 245 90 L 255 90 M 245 130 L 255 130"/>
+        </g>
+        <!-- Dimension labels and GD&T -->
+        <g class="labels" font-family="JetBrains Mono, monospace" font-size="11" fill="currentColor" opacity="0.7">
+          <text class="d7" x="145" y="265" text-anchor="middle">150</text>
+          <text class="d8" x="262" y="113" text-anchor="start">40</text>
+          <text class="d9" x="170" y="80" text-anchor="middle" font-size="14">⌀10 ⊥ 0.05 A</text>
+          <text class="d10" x="225" y="220" text-anchor="start" fill="var(--accent, #b4471a)">✓ ready</text>
+        </g>
+      </svg>
     </div>
   </div>
   <div class="hero-rule" aria-hidden="true"></div>
