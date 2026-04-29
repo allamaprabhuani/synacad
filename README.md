@@ -1,8 +1,8 @@
-# Trueform
+# SynaCAD
 
 An AI design partner bound by the rules of mechanics: describe a part, sketch it, or photograph a broken one — the agent builds the CAD with you and emits a manufacturer-ready package; every number is computed by a validated solver, never invented.
 
-**Landing page:** https://allamaprabhuani.github.io/trueform/
+**Landing page:** https://allamaprabhuani.github.io/synacad/
 
 **Status:** Currently in development. Open-source, MIT-licensed.
 
