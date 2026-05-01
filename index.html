@@ -5,14 +5,41 @@
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>SynaCAD — an AI design partner bound by the rules of mechanics</title>
 <meta name="description" content="SynaCAD turns a photo, a sketch, or a description into a 3D-print-ready file or a full manufacturing drawing pack. At home: snap a broken clip, print a stronger one. At work: describe a steel bracket and get a sized, GD&T-annotated drawing ready for the shop. Every number computed by a validated solver." />
-<meta property="og:title" content="SynaCAD" />
-<meta property="og:description" content="An AI design partner bound by the rules of mechanics." />
+<meta property="og:title" content="SynaCAD — AI design partner bound by the rules of mechanics" />
+<meta property="og:description" content="Photo, sketch, or sentence in. 3D-print-ready file or full manufacturing drawing pack out. Every number computed by a validated solver." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://allamaprabhuani.github.io/synacad/" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="SynaCAD" />
+<meta name="twitter:description" content="An AI design partner bound by the rules of mechanics." />
+<meta name="author" content="Allamaprabhu Ani" />
+<meta name="theme-color" content="#b4471a" />
+<link rel="canonical" href="https://allamaprabhuani.github.io/synacad/" />
+<link rel="icon" type="image/png" href="https://allamaprabhuani.github.io/favicon.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,wght@0,400;0,500;0,600;1,400&display=swap" />
 <link rel="stylesheet" href="style.css" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "SynaCAD",
+  "description": "An AI design partner bound by the rules of mechanics. Turns photos, sketches, or text descriptions into 3D-print-ready files and manufacturing drawing packs, with every dimension computed by a validated solver.",
+  "url": "https://allamaprabhuani.github.io/synacad/",
+  "applicationCategory": "EngineeringApplication",
+  "operatingSystem": "Web, Linux, macOS, Windows",
+  "license": "https://opensource.org/license/mit",
+  "creator": {
+    "@type": "Person",
+    "name": "Allamaprabhu Ani",
+    "url": "https://allamaprabhuani.github.io/"
+  },
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+}
+</script>
 </head>
-<body>
+<body id="top">
 <a class="vision-fab" href="https://allamaprabhuani.github.io/blog/2026/04/30/synapse-cad-vision/" aria-label="Read the SynaCAD vision and mission">
   <span class="fab-pulse" aria-hidden="true"></span>
   <span class="fab-label">read the manifesto</span>
@@ -20,7 +47,7 @@
 </a>
 <header class="site">
   <div class="wrap nav">
-    <a href="#" class="brand" aria-label="SynaCAD home">
+    <a href="#top" class="brand" aria-label="SynaCAD home">
       <span class="logo" aria-hidden="true">
         <svg viewBox="0 0 32 32" width="22" height="22"><circle cx="16" cy="16" r="13" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M3 19 L16 6 L29 19" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="16" cy="6" r="1.6" fill="currentColor"/></svg>
       </span>
@@ -48,7 +75,7 @@
         <li><strong>At home.</strong> Snap a broken plastic clip and get an STL ready for any printer.</li>
         <li><strong>At work.</strong> Describe a 6&nbsp;mm aluminium bracket holding 30&nbsp;kg and get a sized, GD&amp;T-annotated drawing pack for the machine shop.</li>
       </ul>
-      <p class="lede-trust">Every number is computed by a validated solver, never invented by the language model.</p>
+      <p class="lede-trust">Every number is computed by a validated solver, never invented by the language model. <span class="tag-planned">in development</span></p>
       <div class="cta-row">
         <a class="btn primary" href="https://github.com/allamaprabhuani/synacad">Code on GitHub</a>
         <a class="btn ghost" href="mailto:allamaprabhuani@gmail.com?subject=SynaCAD%20-%20notify%20me">Get notified</a>
@@ -154,18 +181,18 @@
 
 <section id="moat" class="block alt">
   <div class="wrap">
-    <p class="eyebrow">How it stays honest</p>
-    <h2 class="h2">Bound by the rules of mechanics.</h2>
+    <p class="eyebrow">How it stays honest <span class="tag-planned">(design principles, in active development)</span></p>
+    <h2 class="h2">The principles SynaCAD is being built around.</h2>
     <p class="sub">The language model is a router, not an oracle. It does not make up numbers.</p>
 
     <ul class="rules">
       <li>
         <span class="dot" aria-hidden="true"></span>
-        <p>Every dimension, tolerance, and material call is computed by a validated solver — the same kind of code a senior engineer would have written by hand.</p>
+        <p>Every dimension, tolerance, and material call comes from a validated solver — the same kind of code a senior engineer would have written by hand.</p>
       </li>
       <li>
         <span class="dot" aria-hidden="true"></span>
-        <p>Every recommendation cites the textbook page or the standard it came from — Bruhn, Niu, ESDU, Lekhnitskii, ASME&nbsp;Y14.5. You can check the working.</p>
+        <p>The engineering report cites the standards it relied on — Bruhn, Niu, ESDU, Lekhnitskii, ASME&nbsp;Y14.5 — so a reviewer can check the working without having to trust the model.</p>
       </li>
       <li>
         <span class="dot" aria-hidden="true"></span>
@@ -219,7 +246,7 @@
         <span class="when">M10–12</span>
         <div>
           <h3>Manufacturing handoff &amp; v1.0</h3>
-          <p>Public v1.0 with four worked examples — a kitchen-chair clip rebuilt from a photo, a stress bracket, a fatigue lug, and a pressure-vessel section.</p>
+          <p>Public v1.0 with four worked examples — a kitchen-chair clip rebuilt from a photo, a stress bracket, a fatigue lug, and a riveted lap-joint coupon.</p>
         </div>
       </li>
     </ol>

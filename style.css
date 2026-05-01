@@ -291,3 +291,29 @@ a:hover{color:var(--accent)}
 @media (prefers-reduced-motion: reduce) {
   .fab-pulse { animation: none; }
 }
+
+/* "(in development)" qualifier on §moat — keeps the moat section honest */
+.tag-planned {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 1px 8px;
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--accent, #b4471a);
+  border: 1px solid color-mix(in srgb, var(--accent, #b4471a) 35%, transparent);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--accent, #b4471a) 8%, transparent);
+  vertical-align: 2px;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+/* Visible focus ring for keyboard users on all interactive elements */
+a:focus-visible,
+button:focus-visible,
+.btn:focus-visible,
+.cta-mini:focus-visible {
+  outline: 2px solid var(--accent, #b4471a);
+  outline-offset: 3px;
+  border-radius: 3px;
+}
