@@ -1,16 +1,21 @@
 # SynaCAD
 
+> Archived 2026-05-21. This was the standalone OSV Fellowship 2026 pitch site.
+> The OSV application was declined on 2026-05-19, so this repo is retained as
+> an artefact rather than an active product track.
+
 An AI design partner bound by the rules of mechanics: describe a part, sketch it, or photograph a broken one — the agent builds the CAD with you and emits a manufacturer-ready package; every number is computed by a validated solver, never invented.
 
 **Landing page:** https://allamaprabhuani.github.io/synacad/
 
-**Status:** Currently in development. Open-source, MIT-licensed.
+**Status:** Archived / inactive. Open-source, MIT-licensed.
 
 ---
 
 ## What this repo is
 
-Right now, this repository hosts the project's landing page. The agent's source code will be released here as v1.0 ships.
+This repository hosts the project's landing page from the OSV pitch period.
+The agent source was not released here.
 
 ## Roadmap
 
